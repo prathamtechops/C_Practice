@@ -37,16 +37,15 @@ int main(int argc, char const *argv[])
                 printf("Enter author name: \n");
                 scanf("%s", &li[a].author);
                 a++;
-
             }
             break;
 
         case 2:
             for (int j = 0; j < no_of_books; j++)
             {
-                printf("book name = %s\t", li[j].book_n);
-                printf("author name = %s\t", li[j].author);
-                printf("Book ID = %s\t", li[j].book_id);
+                printf("book name = %s\t  ", li[j].book_n);
+                printf("author name = %s\t  ", li[j].author);
+                printf("Book ID = %s\t  ", li[j].book_id);
                 printf("\n");
             }
             break;

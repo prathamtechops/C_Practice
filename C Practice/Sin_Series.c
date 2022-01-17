@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-float cal(float);
+float formula(float);
 double factorial(int);
 int main()
 {
@@ -10,7 +10,7 @@ int main()
     printf("Enter the value of x in degrees: ");
     scanf("%d", &degree);
     radian = degree * (3.14159 / 180.0);
-    printf("Sin(%d) = %f\n", degree, cal(radian));
+    printf("Sin(%d) = %.3f\n", degree, formula(radian));
     return 0;
 }
 double factorial(int num){
@@ -20,7 +20,7 @@ double factorial(int num){
     }
     return factorial;
 }
-float cal(float radian){
+float formula(float radian){
     float result = 0;
     int n = 1;
     int sign = 1;

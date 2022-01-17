@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
        }
        
        for(int k = 1; k <= 2 * i - 1; k++){
-           printf("*");
+           printf("1");
        }
        printf("\n");
    }

@@ -15,7 +15,6 @@ int main()
         case 'O':
         case 'u':
         case 'U': printf("%c is a vowel", c);
-            
             break;
         default:
             printf("%c is not a vowel", c);

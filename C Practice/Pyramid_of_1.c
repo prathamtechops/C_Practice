@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
        for (int j = 1; j <= rows - i; j++){
             printf(" ");
        }
-       
+
        for(int k = 1; k <= 2 * i - 1; k++){
            printf("1");
        }

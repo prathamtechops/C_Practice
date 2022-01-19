@@ -15,8 +15,6 @@ int main()
 
     printf("Enter a number to get its reverse\n");
     scanf("%d", &num);
-
     printf("Reverse of no. is %d", reversDigits(num));
-
     return 0;
 }

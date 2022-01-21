@@ -88,7 +88,8 @@ int main()
             }
     else {printf("\t\t!!!!!!!!!!!!!!!!!!**Invalid Input**!!!!!!!!!!!!!!!!!!!!!!!!\n"); goto Start;}
     break;
-    case 4: goto Exit;
+    case 4: 
+    goto Exit;
         break;
     }
     Exit:

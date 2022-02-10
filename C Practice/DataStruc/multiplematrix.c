@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     int brows, bcolumns;
     printf("Enter the number of rows and columns of matrix a: ");
     scanf("%d %d", &brows, &bcolumns); 
-    if (acolumns != brows) print("The number of rows and columns are not equal so the multiplication of matrix is not possible");
+    if (acolumns != brows) printf("The number of rows and columns are not equal so the multiplication of matrix is not possible");
     else{
         printf("Enter the elements of the matrix a:\n ");
         for (int i = 0; i <arows; i++){
@@ -28,6 +28,22 @@ int main(int argc, char const *argv[])
                 scanf("%d", &b[i][j]);
             }
             }
+        for (int i = 0; i < arows; i++){
+            for (int j = 0; j < bcolumns; j++){
+                for(int k = 0; k < acolumns; k++){
+                    sum = sum + a[i][k] * a[k][j];
+                }
+                product[i][j] = sum;
+                sum = 0;
+            }
+        }
+        for (int r = 0; r < arows; r++)
+        {
+            for (int c = 0; c < bcolumns; c++){
+                printf("%d ", product[r][c]);
+            }
+            printf("\n");
+        }
         
         
     }

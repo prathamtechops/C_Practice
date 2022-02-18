@@ -1,23 +1,20 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-   int no, n; 
-   //enter the number of rows 
-   printf("Enter the number of rows: ");
-   scanf("%d", &no);
-   //print the number of rows
-   for (int rows = 0; rows < no; rows++){
-       for (int spaces = 0; spaces <  no - rows; spaces++){
+    
+    int rows, n;
+    printf("Enter thr number of rows: ");
+    scanf("%d", &rows);
+    for (int i = 0; i < rows; i++){
+        for (int k= 0; k < rows -i; k++){
             printf(" ");
-       }
-       n = 1;
-       for(int k = 0; k <= rows; k++){
-           printf(" %d", n);
-           n = n * (rows - k)/ (k + 1); //formula for pascal triangle 
-       }
-       printf("\n");
-   }
-
-   return 0;
-
+        }
+        n = 1;
+        for (int k = 0; k <= i; k++) {
+            printf(" %d", n);
+            n = n * (i - k)/(k +1);
+        }
+    printf("\n");
+    }
+    return 0;
 }

@@ -1,0 +1,24 @@
+#include <stdio.h>
+int Search(int a[],int x){
+    for(int i = 0; i<6;i++)
+    {
+        if(a[i] == x) {
+            return 1;
+            
+        }
+        else {
+            return 0;
+        }
+    }
+}
+int main()
+{
+    int a[] = {6,3,7,3,1,5};
+    int x;
+    printf("\nEnter the element ");
+    scanf("%d", &x);
+    int result = Search(a, x);
+    if(result == 1) printf("Founded");
+    else printf("Not found");
+    return 0;
+}

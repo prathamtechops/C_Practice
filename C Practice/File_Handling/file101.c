@@ -3,14 +3,12 @@
 int main(int argc, char const *argv[])
 {
     // int c;
-    FILE *file = fopen("bts.txt", "a");
-    // while ((c = fgetc(file)) != EOF)
-    // {
-    //     printf("%c", c);
-    // }
-    char *s;
-    gets(s);
-    printf("%s", s);
+    FILE *file = fopen("bts.txt", "r");
+    char c = fgetc(file);
+    while ((c = fgetc(file)) != EOF)
+    {
+        printf("%c", c);
+    }
 
     return 0;
 }

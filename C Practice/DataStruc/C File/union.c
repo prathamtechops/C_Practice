@@ -12,7 +12,7 @@ int main()
 
     if (f == NULL)
     {
-        printf("GfgTest.c file failed to open.");
+        printf("file failed to open.");
     }
     else
     {

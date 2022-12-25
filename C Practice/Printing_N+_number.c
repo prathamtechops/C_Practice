@@ -26,7 +26,6 @@ int output(int number)
             if (i == j)
             {
                 if (i > 1)
-
                     printf(")");
             }
             else

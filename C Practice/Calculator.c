@@ -23,7 +23,6 @@ int main() {
     case '/':
       printf("%.2f / %.2f = %.2f", a, b, a / b);
       break;
-    // Invalid Value
     default:
       printf("Error!");
   }

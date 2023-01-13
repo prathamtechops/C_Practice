@@ -3,15 +3,12 @@
 void main()
 {
     int a[5], b[5], c[10], i;
-
     int k = 0;
     printf("enter an array");
-
     for (i = 0; i <= 4; i++)
     {
         scanf("%d", &a[i]);
     }
-
     printf("first array");
     for (i = 0; i <= 4; i++)
     {
@@ -26,7 +23,6 @@ void main()
     {
         printf("%d", b[i]);
     }
-
     for (i = 0; i <= 4; i++)
     {
         c[i] = a[i];
